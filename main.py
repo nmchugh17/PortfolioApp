@@ -1,9 +1,10 @@
 import streamlit as st
+import pandas
 
 # Sets the layout on the streamlit app to wide
 st.set_page_config(layout="wide")
 
-# Creates 2 columns objects
+# Creates 2 column objects
 col1, col2 = st.columns(2)
 
 # Uses context manager to add an image to column 1
@@ -21,9 +22,28 @@ with col2:
     """
     st.info(content)
 
-# Adds more information outside of the columns
+# Adds more information outside the columns
 content2 = """
 Below you can find some of the apps I have built in Python. Feel free to contact me!
 """
 
 st.write(content2)
+
+# Creates 3 more column objects with different widths
+col3, empty_col, col4 = st.columns([1.5, 0.5, 1.5])
+
+# Use pandas do import csv file data into a dataframe
+df = pandas.read_csv("data.csv", sep=";")
+
+with col3:
+    for index, row in df[:10].iterrows():
+        st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
+with col4:
+    for index, row in df[10:].iterrows():
+        st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
