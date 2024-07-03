@@ -42,6 +42,8 @@ with col3:
             st.write(row["description"])
             st.image("images/" + row["image"])
             st.write(f"[Source Code]({row['url']})")
+            if not pd.isnull(row['optionalurl']):
+                st.write(f"[Web App Link]({row['optionalurl']})")
 with col4:
     for index, row in df[10:].iterrows():
         if not pd.isnull(row['url']):
@@ -49,3 +51,5 @@ with col4:
             st.write(row["description"])
             st.image("images/" + row["image"])
             st.write(f"[Source Code]({row['url']})")
+            if not pd.isnull(row['optionalurl']):
+                st.write(f"[Web App Link]({row['optionalurl']})")
