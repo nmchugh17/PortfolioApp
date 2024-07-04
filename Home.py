@@ -40,7 +40,7 @@ with col3:
         if not pd.isnull(row['url']):
             st.header(row["title"])
             st.write(row["description"])
-            st.image("images/" + row["image"])
+            st.image("./images/" + row["image"])
             st.write(f"[Source Code]({row['url']})")
             if not pd.isnull(row['optionalurl']):
                 st.write(f"[Web App Link]({row['optionalurl']})")
@@ -49,7 +49,7 @@ with col4:
         if not pd.isnull(row['url']):
             st.header(row["title"])
             st.write(row["description"])
-            st.image("images/" + row["image"])
+            st.image("./images/" + row["image"])
             st.write(f"[Source Code]({row['url']})")
             if not pd.isnull(row['optionalurl']):
                 st.write(f"[Web App Link]({row['optionalurl']})")
