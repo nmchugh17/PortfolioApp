@@ -9,7 +9,7 @@ col1, col2 = st.columns(2)
 
 # Uses context manager to add an image to column 1
 with col1:
-    st.image("./images/photo.jpg")
+     # st.image("images/photo.jpg")
 
 # Uses context manager to add information to column 2
 with col2:
@@ -40,7 +40,7 @@ with col3:
         if not pd.isnull(row['url']):
             st.header(row["title"])
             st.write(row["description"])
-            st.image("./images/" + row["image"])
+            st.image("images/" + row["image"])
             st.write(f"[Source Code]({row['url']})")
             if not pd.isnull(row['optionalurl']):
                 st.write(f"[Web App Link]({row['optionalurl']})")
@@ -49,7 +49,7 @@ with col4:
         if not pd.isnull(row['url']):
             st.header(row["title"])
             st.write(row["description"])
-            st.image("./images/" + row["image"])
+            st.image("images/" + row["image"])
             st.write(f"[Source Code]({row['url']})")
             if not pd.isnull(row['optionalurl']):
                 st.write(f"[Web App Link]({row['optionalurl']})")
