@@ -1,5 +1,21 @@
 import streamlit as st
 import pandas as pd
+import os
+
+# Define the relative and absolute image paths
+relative_image_path = 'images/photo.jpg'
+absolute_image_path = '/home/ec2-user/PortfolioApp/images/photo.jpg'
+
+# Debugging information
+st.write("Current working directory:", os.getcwd())
+st.write("Relative image path exists:", os.path.exists(relative_image_path))
+st.write("Absolute image path exists:", os.path.exists(absolute_image_path))
+
+# Use the absolute path for now
+if not os.path.exists(absolute_image_path):
+    st.error(f"Image not found at {absolute_image_path}")
+else:
+    st.image(absolute_image_path)
 
 # Sets the layout on the streamlit app to wide
 st.set_page_config(layout="wide")
@@ -9,7 +25,7 @@ col1, col2 = st.columns(2)
 
 # Uses context manager to add an image to column 1
 with col1:
-     # st.image("images/photo.jpg")
+      # st.image("images/photo.jpg")
 
 # Uses context manager to add information to column 2
 with col2:
