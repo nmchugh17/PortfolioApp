@@ -1,6 +1,6 @@
 title;description;url;image;optionalurl
-Todo App;A distraction-free web app to help you focus on creating and completing tasks.;https://github.com/nmchugh17/ToDoWebApp;1.png;http://ec2-3-249-255-102.eu-west-1.compute.amazonaws.com:8501/
-Portfolio Website;A website built entirely in Python to showcase coding projects and apps.;https://github.com/nmchugh17/PortfolioApp;2.png;
+Todo App;A distraction-free web app to help you focus on creating and completing tasks.;https://github.com/nmchugh17/ToDoWebApp;1.png;https://todo.nmch.dev/
+Portfolio Website;A website built entirely in Python to showcase coding projects and apps.;https://github.com/nmchugh17/PortfolioApp;2.png;https://nmch.dev/
 PDF Templates;A script that generates PDF templates of multiple pages given some predefined guidelines.;https://github.com/nmchugh17/PDFTemplateApp;3.png;
 PDF Invoices;A script that reads invoice records from Excel files and automatically generates PDF invoices.;https://github.com/nmchugh17/InvoiceGenerationApp;4.png;
 Positive News Site;A website that gets data from a news API and uses sentiment analysis to publish only positive news.;https://github.com/nmchugh17/NewsAPIEmailApp;5.png;
