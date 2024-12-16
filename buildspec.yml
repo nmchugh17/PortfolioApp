@@ -9,12 +9,12 @@ phases:
     commands:
       - echo Building the Docker image...
       - docker build -t portfolio-app .
-      - docker tag portfolio-app:latest 590184014967.dkr.ecr.eu-west-1.amazonaws.com/portfolio-app:latest
+      - docker tag portfolio-app:latest 590184014967.dkr.ecr.eu-west-1.amazonaws.com/portfolio-application:latest
   post_build:
     commands:
       - echo Pushing the Docker image...
-      - docker push 590184014967.dkr.ecr.eu-west-1.amazonaws.com/portfolio-app:latest
+      - docker push 590184014967.dkr.ecr.eu-west-1.amazonaws.com/portfolio-application:latest
       - echo Writing image definitions file...
-      - printf '[{"name":"portfolio-app","imageUri":"%s"}]' 590184014967.dkr.ecr.eu-west-1.amazonaws.com/portfolio-app:latest > imagedefinitions.json
+      - printf '[{"name":"portfolio-application","imageUri":"%s"}]' 590184014967.dkr.ecr.eu-west-1.amazonaws.com/portfolio-application:latest > imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
