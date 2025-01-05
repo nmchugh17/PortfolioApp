@@ -15,7 +15,7 @@ Internet Speed Analysis;A program that records the internet speed every few seco
 Monitoring Data;A program that monitors a particular website and periodically records the data to a remote server.;;14.png;
 Visualizing Data;A program that visualizes the data collected in the previous monitoring program. ;;15.png;
 Visualizing Weather Forecast;A data web app that visualizes the weather forecast for the next five days of any city.;https://github.com/nmchugh17/WeatherForecastDataApp.git;16.png;
-Student Management System;A desktop PyQt6 GUI app for managing university student data with an SQL database backend.;;17.png;
-School Management System;A desktop PyQt6 GUI app for managing complex university data with an SQL database backend.;;18.png;
+Application Form in Flask;Uses Flask to create a job application form with an SQL database backend.;https://github.com/nmchugh17/FlaskFormApp.git;21.png;
+Application Form in Django;Uses Django to create a job application form with an SQL database backend.;https://github.com/nmchugh17/DjangoFormApp.git;22.png;
 Restaurant Menu Web App;A Django web app to let customers see a restaurant menu and meal availability.;;19.png;
 Online Store;A Django online store app where users can place orders and sellers can manage them.;;20.png;
