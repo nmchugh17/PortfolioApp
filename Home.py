@@ -5,11 +5,11 @@ import pandas as pd
 st.set_page_config(layout="wide")
 
 # Creates 2 column objects
-col1, col2 = st.columns(2)
+empty, col1, col2 = st.columns([0.5, 1, 3.5])
 
 # Uses context manager to add an image to column 1
 with col1:
-    st.image("images/photo.jpg")
+    st.image("images/photo.png", width=200)
 
 # Uses context manager to add information to column 2
 with col2:
